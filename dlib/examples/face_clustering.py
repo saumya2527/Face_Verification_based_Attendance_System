@@ -1,38 +1,3 @@
-#!/usr/bin/python
-# The contents of this file are in the public domain. See LICENSE_FOR_EXAMPLE_PROGRAMS.txt
-#
-#   This example shows how to use dlib's face recognition tool for clustering using chinese_whispers.
-#   This is useful when you have a collection of photographs which you know are linked to
-#   a particular person, but the person may be photographed with multiple other people.
-#   In this example, we assume the largest cluster will contain photos of the common person in the
-#   collection of photographs. Then, we save extracted images of the face in the largest cluster in
-#   a 150x150 px format which is suitable for jittering and loading to perform metric learning (as shown
-#   in the dnn_metric_learning_on_images_ex.cpp example.
-#   https://github.com/davisking/dlib/blob/master/examples/dnn_metric_learning_on_images_ex.cpp
-#
-# COMPILING/INSTALLING THE DLIB PYTHON INTERFACE
-#   You can install dlib using the command:
-#       pip install dlib
-#
-#   Alternatively, if you want to compile dlib yourself then go into the dlib
-#   root folder and run:
-#       python setup.py install
-#   or
-#       python setup.py install --yes USE_AVX_INSTRUCTIONS
-#   if you have a CPU that supports AVX instructions, since this makes some
-#   things run faster.  This code will also use CUDA if you have CUDA and cuDNN
-#   installed.
-#
-#   Compiling dlib should work on any operating system so long as you have
-#   CMake and boost-python installed.  On Ubuntu, this can be done easily by
-#   running the command:
-#       sudo apt-get install libboost-python-dev cmake
-#
-#   Also note that this example requires scikit-image which can be installed
-#   via the command:
-#       pip install scikit-image
-#   Or downloaded from http://scikit-image.org/download.html. 
-
 import sys
 import os
 import dlib

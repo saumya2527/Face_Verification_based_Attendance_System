@@ -1,31 +1,3 @@
-#!/usr/bin/python
-# The contents of this file are in the public domain. See LICENSE_FOR_EXAMPLE_PROGRAMS.txt
-#
-#   This example shows how to use dlib's face recognition tool for image alignment.
-#
-# COMPILING/INSTALLING THE DLIB PYTHON INTERFACE
-#   You can install dlib using the command:
-#       pip install dlib
-#
-#   Alternatively, if you want to compile dlib yourself then go into the dlib
-#   root folder and run:
-#       python setup.py install
-#   or
-#       python setup.py install --yes USE_AVX_INSTRUCTIONS
-#   if you have a CPU that supports AVX instructions, since this makes some
-#   things run faster.  This code will also use CUDA if you have CUDA and cuDNN
-#   installed.
-#
-#   Compiling dlib should work on any operating system so long as you have
-#   CMake and boost-python installed.  On Ubuntu, this can be done easily by
-#   running the command:
-#       sudo apt-get install libboost-python-dev cmake
-#
-#   Also note that this example requires OpenCV and Numpy which can be installed
-#   via the command:
-#       pip install opencv-python numpy
-#   Or downloaded from http://opencv.org/releases.html
-
 import sys
 
 import dlib
